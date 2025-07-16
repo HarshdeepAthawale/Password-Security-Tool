@@ -20,11 +20,10 @@ A web-based educational tool to help you understand password security, test pass
   - Includes a clear disclaimer: for educational purposes only.
   - Demonstrates why strong, unique passwords are important.
 
-## Setup & Installation
+## Local Setup & Usage
 
 ### 1. Prerequisites
 - **Python 3.8+** must be installed. [Download Python here](https://www.python.org/downloads/).
-- (Optional but recommended) Use a virtual environment to avoid conflicts with other Python projects.
 
 ### 2. Clone or Download the Repository
 If you have Git:
@@ -34,29 +33,17 @@ cd "Password Security  Tool"
 ```
 Or download and extract the ZIP, then open a terminal in the project folder.
 
-### 3. Create and Activate a Virtual Environment (Recommended)
-**Windows:**
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-**macOS/Linux:**
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 4. Install Requirements
+### 3. Install Requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Run the App
+### 4. Run the App
 ```bash
 streamlit run app.py
 ```
 
-### 6. Open in Your Browser
+### 5. Open in Your Browser
 - The app will open automatically, or visit [http://localhost:8501](http://localhost:8501)
 
 ### Troubleshooting
