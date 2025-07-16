@@ -20,36 +20,49 @@ A web-based educational tool to help you understand password security, test pass
   - Includes a clear disclaimer: for educational purposes only.
   - Demonstrates why strong, unique passwords are important.
 
-## Local Setup & Usage
+## Project Structure
+
+- `app.py` — Main application code (Streamlit app).
+- `requirements.txt` — Python dependencies needed to run the app.
+- `README.md` — Project documentation and usage instructions.
+- `.git/` — Git version control directory (hidden, used for tracking changes).
+
+## How to Run Locally
 
 ### 1. Prerequisites
-- **Python 3.8+** must be installed. [Download Python here](https://www.python.org/downloads/).
+- **Python 3.8+** must be installed. [Download Python here](https://www.python.org/downloads/)
+- **pip** (Python’s package installer) should be available.
 
-### 2. Clone or Download the Repository
-If you have Git:
-```bash
-git clone <repository-url>
-cd "Password Security  Tool"
-```
-Or download and extract the ZIP, then open a terminal in the project folder.
+### 2. Get the Project
+- If you have Git:
+  ```sh
+  git clone <repository-url>
+  cd "Password Security  Tool"
+  ```
+- Or download and extract the ZIP, then open a terminal in the project folder.
 
-### 3. Install Requirements
-```bash
+### 3. Install Dependencies
+```sh
 pip install -r requirements.txt
 ```
 
 ### 4. Run the App
-```bash
+```sh
 streamlit run app.py
+```
+If you get an error that `streamlit` is not recognized, try:
+```sh
+python -m streamlit run app.py
 ```
 
 ### 5. Open in Your Browser
-- The app will open automatically, or visit [http://localhost:8501](http://localhost:8501)
+- The app should open automatically.
+- If not, open your browser and go to: [http://localhost:8501](http://localhost:8501)
 
 ### Troubleshooting
 - If you get a `pip` or `python` not found error, ensure Python is added to your PATH.
-- If Streamlit does not launch, try `python -m streamlit run app.py`.
 - For permission errors, try running your terminal as administrator.
+- If you see errors during installation or running, copy the error message and seek help.
 
 ## How It Works
 
