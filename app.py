@@ -6,7 +6,7 @@ from itertools import product
 
 # --- Security/Ethics Disclaimer ---
 st.markdown("""
-<div style='background-color:#fff3cd; padding:10px; border-radius:5px; border:1px solid #ffeeba;'>
+<div style='background-color:#fff3cd; color:#222; padding:10px; border-radius:5px; border:1px solid #ffeeba;'>
 <b>Disclaimer:</b> This tool is for <b>educational purposes only</b>. Do not use it for unauthorized password cracking or malicious activities.
 </div>
 """, unsafe_allow_html=True)
@@ -17,6 +17,9 @@ This web app helps you understand password security by:
 - **Testing password strength** with instant feedback and suggestions.
 - **Simulating password cracking** using dictionary and brute-force attacks.
 """)
+
+with open("style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # --- Helper Functions ---
 def has_repeats(pw):

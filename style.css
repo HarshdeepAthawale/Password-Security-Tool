@@ -1,0 +1,23 @@
+body, .stApp {
+    background-color: #000000 !important;
+    color: #f5f5f5 !important;
+}
+
+.stMarkdown, .stTextInput, .stButton, .stRadio, .stFileUploader, .stProgress, .stHeader, .stTitle, .stSubheader, .stText, .stDataFrame, .stAlert, .stSidebar, .stSelectbox, .stSlider, .stCheckbox, .stExpander, .stTabs, .stTab, .stTextArea, .stForm, .stFormSubmitButton {
+    color: #f5f5f5 !important;
+    background-color: #000000 !important;
+}
+
+/* Style Streamlit input fields and widgets for dark mode */
+input, textarea, select {
+    background-color: #222 !important;
+    color: #f5f5f5 !important;
+    border: 1px solid #444 !important;
+}
+
+/* Style buttons for dark mode */
+button, .stButton>button {
+    background-color: #222 !important;
+    color: #f5f5f5 !important;
+    border: 1px solid #444 !important;
+} 
