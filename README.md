@@ -1,6 +1,6 @@
 # Password Security Tool
 
-A web-based educational tool to help you understand password security, test password strength, and simulate password cracking techniques in a safe environment.
+A web-based educational tool to help you understand password security, test password strength, and learn about good password practices.
 
 ## Features
 
@@ -8,13 +8,7 @@ A web-based educational tool to help you understand password security, test pass
   - Instantly checks password strength based on length, character variety, common patterns, and more.
   - Provides suggestions for improving password security.
   - Color-coded strength meter and detailed feedback.
-
-- **Ethical Password Cracker**
-  - Hashes your input password using SHA-256.
-  - Simulates password cracking using:
-    - A built-in or custom dictionary attack (upload your own .txt file).
-    - A limited brute-force attack (up to 4 characters, a-z, 0-9).
-  - Shows progress, live attempts, and timing information.
+  - **Displays the SHA-256 hash of your entered password** so you can see how your password is represented as a secure, irreversible cryptographic hash.
 
 - **Educational Focus**
   - Includes a clear disclaimer: for educational purposes only.
@@ -66,9 +60,8 @@ python -m streamlit run app.py
 
 ## How It Works
 
-- **Password Strength Tester**: Enter a password (and optionally a username). The tool analyzes your password for length, character types, repeated characters, keyboard patterns, common substitutions, and inclusion of your username. It provides a strength rating and suggestions.
-
-- **Ethical Password Cracker**: Enter a password to see its SHA-256 hash. Try to "crack" the hash using a dictionary or brute-force attack. You can upload your own dictionary file for testing. The tool shows progress, attempts, and how long the attack takes.
+- **Password Strength Tester**: Enter a password (and optionally a username). The tool analyzes your password for length, character types, repeated characters, keyboard patterns, common substitutions, and inclusion of your username. It provides a strength rating, suggestions, and **shows the SHA-256 hash** of your password.  
+_SHA-256 is a cryptographic hash function commonly used to securely store passwords. This feature helps you understand how your password is transformed into a hash, which is what websites typically store instead of your actual password._
 
 ## Disclaimer
 
